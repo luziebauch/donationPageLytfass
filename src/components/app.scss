@@ -1,0 +1,55 @@
+.loadingbar{
+    padding: 0 10px;
+    margin: 20px auto;
+    font-size: 50px;
+    height: 50px;
+    text-align: right;
+}
+.textQR{
+    text-align: center;
+    font-size: 50px;
+}
+.list{
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto 0;
+}
+.listItem{
+    .list-item__image{
+        width: 50px;
+        height: 50px;
+    }
+    overflow: hidden;
+    width: 800px;
+    text-overflow: ellipsis;
+    height: 100px;
+}
+.mainBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 800px;
+    margin: 50px 0;
+}
+.imageQR{
+    text-align: center;
+}
+.qrCode{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 650px 150px;
+}
+.video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+.content{
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+}
+.screen{
+    background-image: 'https://cdn.pixabay.com/photo/2015/05/15/14/50/concert-768722__480.jpg';
+}

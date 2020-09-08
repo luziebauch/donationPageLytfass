@@ -1,24 +1,19 @@
 import { hot } from 'react-hot-loader/root';
-import React, { PureComponent } from 'react';
+import React from 'react';
 
 // Components
-import Headline from './header/headline/Headline';
-import Intro from './header/intro/Intro';
-import Todos from './todos/Todos';
+import Loadingbar from './header/Loadingbar';
+import MainBody from './main/MainBody';
 
-// We use PureComponent instead of Component because it handles the shouldComponentUpdate method for us.
-// If we want to define our own shouldComponentUpdate logic we have to use Component instead of PureComponent.
-class App extends PureComponent {
-    render() {
-        return (
-            <>
-                <Headline headline="chayns® React Todo Example"/>
-                <Intro intro="This is a very simple and basic example of how u can use chayns® and React together."/>
-                <Todos/>
-            </>
-        );
-    }
-}
+const App = () => (
+    <div className="screen">
+        { /* <img className="video" src="https://cdn.pixabay.com/photo/2017/08/10/01/44/concert-2616946_1280.jpg" alt=""/> */}
+        <div className="content">
+            <Loadingbar/>
+            <MainBody/>
+        </div>
+    </div>
+);
 
 export default App;
 export const HotApp = hot(App);
