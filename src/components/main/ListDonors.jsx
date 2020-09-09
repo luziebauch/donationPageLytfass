@@ -4,7 +4,7 @@ import { List, ListItem } from 'chayns-components/lib';
 
 const ListDonors = () => (
     <div className="list">
-        <div>Danke für deine Spende!</div>
+        <div className="thanks"><strong>Danke für deine Spende!</strong></div>
         <List>
             <ListItem
                 className="listItem"
