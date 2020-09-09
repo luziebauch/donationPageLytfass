@@ -1,43 +1,49 @@
-.loadingbar{
+/* .loadingbar{
     padding: 0 10px;
-    margin: 20px auto;
     font-size: 50px;
     height: 50px;
     text-align: right;
+    border: solid green;
+} */
+.background{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.content {
+    position: fixed;
+}
+.heading{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    width: 100%;
 }
 .mainBody{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 700px;
-    margin: 200px 0;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 800px;
 }
 .imageQR{
-    // text-align: center;
-    transform: rotate(345deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.qrCode{
+.qrCodeContainer{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 450px 50px 50px 50px;
-    animation-delay: 5s;
+    grid-template-rows: 2fr 1fr;
 }
 .textQR{
     text-align: center;
-    font-size: 2vw;
-    margin: 20px auto;
-}
-.textArtist{
-    text-align: center;
-    font-size: 2vw;
-    margin: 20px auto;
-}
-.artist{
-    text-align: center;
-    font-size: 2vw;
-    margin: 20px auto;
+    font-size: 2.25vw;
 }
 .thanks{
-    font-size: 3.25vw;
+    font-size:2vw;
 }
 .list{
     font-size: 30px;
@@ -55,14 +61,4 @@
     width: 800px;
     text-overflow: ellipsis;
     height: 100px;
-}
-.video{
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-}
-.content{
-    position: fixed;
-    width: 100%;
-    padding: 20px;
 }
