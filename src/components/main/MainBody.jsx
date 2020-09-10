@@ -5,8 +5,8 @@ import ListDonors from './ListDonors';
 
 const mainBody = () => (
     <div className="mainBody">
-        <QRCode/>
         <ListDonors/>
+        <QRCode/>
     </div>
 );
 export default mainBody;
