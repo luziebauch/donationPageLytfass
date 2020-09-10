@@ -1,6 +1,6 @@
 import { hot } from 'react-hot-loader/root';
 import React from 'react';
-
+import './app.scss';
 // Components
 import MainBody from './main/MainBody';
 
