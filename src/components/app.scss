@@ -1,20 +1,21 @@
 .background {
     position: fixed;
     width: 100vw;
-    right: 0;
+    left: 0;
     bottom: 0;
     filter: blur(2.5px);
+    margin: 0;
+    padding: 0;
 }
 .screen {
-    position: absolute;
+    // position: absolute;
     width: 100vw;
-    height: 100vh;
     top: 0;
     left: 0;
 }
-.content {
-    position: absolute;
-}
+/* .content {
+    // position: absolute;
+} */
 .mainBody {
     display: grid;
     grid-template-columns: 1fr;
@@ -23,16 +24,19 @@
     top: 0;
     left: 0;
 }
-.imageQR {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .qrCodeContainer {
+    //position: absolute;
+    //bottom: 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     margin: 0;
+}
+.imageQR {
+    background-image: url('https://k8s.az-chayns.space/qrCodeGenerator/svg?value=https%3A%2F%2Fchayns.cc%2Fdnrvam&color=005EB8&text=Spenden&icon=TobitLogo');
+    height: 30vh;
+    width: 30vh;
+    margin: auto;
 }
 .textQR {
     display: flex;
