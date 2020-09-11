@@ -6,7 +6,7 @@ import MainBody from './main/MainBody';
 
 const App = () => (
     <div className="screen">
-        <img src="https://cdn.pixabay.com/photo/2014/02/19/16/06/curtain-269920_1280.jpg" alt="" className="background" width="100%"/>
+        <img src="https://cdn.pixabay.com/photo/2014/02/19/16/06/curtain-269920_1280.jpg" alt="" className="background"/>
         <div className="content">
             <MainBody/>
         </div>
